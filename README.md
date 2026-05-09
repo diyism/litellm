@@ -1,3 +1,20 @@
+        $ uv tool install 'litellm[proxy]'
+        $ cat nvidia.config.yaml
+        model_list:
+          - model_name: nvidia/deepseek-ai/deepseek-v4-pro
+            litellm_params:
+              model: nvidia_nim/deepseek-ai/deepseek-v4-pro
+              api_key: nvapi-EK...
+              drop_params: true
+        
+          - model_name: nvidia/deepseek-ai/deepseek-v4-pro
+            litellm_params:
+              model: nvidia_nim/deepseek-ai/deepseek-v4-pro
+              api_key: nvapi-Kn...
+              drop_params: true
+        $ litellm --config nvidia.config.yaml
+
+
 <h1 align="center">
         🚅 LiteLLM
     </h1>
