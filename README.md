@@ -29,6 +29,20 @@
         wire_api = "responses"
         base_url = "http://127.0.0.1:4000/v1"
 
+        $ cat ~/.config/Claude-3p/configLibrary/bb...json
+        {
+          "disableDeploymentModeChooser": true,
+          "inferenceProvider": "gateway",
+          "inferenceGatewayBaseUrl": "http://127.0.0.1:4000",
+          "inferenceGatewayApiKey": "any",
+          "inferenceModels": [
+            {
+              "name": "nvidia/deepseek-ai/deepseek-v4-pro",
+              "supports1m": true
+            }
+          ]
+        }
+
 
 <h1 align="center">
         🚅 LiteLLM
