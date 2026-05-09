@@ -1,4 +1,5 @@
         $ uv tool install 'litellm[proxy]'
+        # 多帐号负载均衡:
         $ cat nvidia.config.yaml
         model_list:
           - model_name: nvidia/deepseek-ai/deepseek-v4-pro
@@ -14,6 +15,7 @@
               drop_params: true
         $ litellm --config nvidia.config.yaml
 
+        # 给codex用
         $ cat ~/.codex/config.toml
         #model = "gpt-5.4"
         #personality = "pragmatic"
@@ -29,6 +31,7 @@
         wire_api = "responses"
         base_url = "http://127.0.0.1:4000/v1"
 
+        # 给claude app用:
         $ cat ~/.config/Claude-3p/configLibrary/bb...json
         {
           "disableDeploymentModeChooser": true,
