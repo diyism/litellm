@@ -14,6 +14,21 @@
               drop_params: true
         $ litellm --config nvidia.config.yaml
 
+        $ cat ~/.codex/config.toml
+        #model = "gpt-5.4"
+        #personality = "pragmatic"
+        #model_reasoning_effort = "medium"
+        
+        model_provider = "nvidia"
+        model = "nvidia/deepseek-ai/deepseek-v4-pro"
+        
+        #model_provider = "kiro"
+        
+        [model_providers.nvidia]
+        name = "nvidia"
+        wire_api = "responses"
+        base_url = "http://127.0.0.1:4000/v1"
+
 
 <h1 align="center">
         🚅 LiteLLM
